@@ -1,4 +1,5 @@
 {
+  "homepage": "http://ncrown1190.github.io/Portfolio",
   "name": "myportfolio",
   "version": "0.1.0",
   "private": true,
@@ -23,6 +24,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -46,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "@types/aos": "^3.0.4"
+    "@types/aos": "^3.0.4",
+    "gh-pages": "^5.0.0"
   }
 }
