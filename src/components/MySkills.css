@@ -1,0 +1,32 @@
+h1 {
+  text-align: center;
+}
+
+.MySkills {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 35px;
+  margin: 17px;
+}
+
+.wrap {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 10px;
+  grid-template-columns: 100px 100px 100px;
+}
+
+.eachSkill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

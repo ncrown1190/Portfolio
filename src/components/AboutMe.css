@@ -1,0 +1,39 @@
+.AboutMe {
+  /* height: 40vh; */
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+}
+
+.leftContent {
+  width: 50%;
+  height: 60vh;
+  border-radius: 20px;
+}
+
+.jsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+.aboutMe {
+  width: 500px;
+  font-size: 18px;
+}
+@media only screen and (max-width: 768px) {
+  .aboutMe {
+    width: 300px;
+  }
+  /* .AboutMe {
+    color: #9e9ee5;
+  } */
+}

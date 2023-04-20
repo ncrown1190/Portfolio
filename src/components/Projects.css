@@ -1,0 +1,52 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  height: 80vh;
+}
+
+/* .eachProject {
+  background-color: lightblue;
+  width: 200px;
+  height: 200px;
+  margin: 27px;
+  position: relative;
+} */
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 600px;
+  gap: 30px 65px;
+}
+
+.projectsButton {
+  border: 1px solid rgb(215, 215, 215);
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+  font-family: "Chivo Mono", monospace;
+  font-weight: bolder;
+}
+
+.projectsButton:hover {
+  border: 1px solid grey;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+button {
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .grid {
+    grid-template-columns: auto;
+    width: 300px;
+  }
+}

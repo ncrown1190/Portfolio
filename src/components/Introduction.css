@@ -1,0 +1,102 @@
+.intro {
+  display: flex;
+  /* height: 100vh; */
+  align-items: center;
+  justify-content: center;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  flex: 1;
+  position: relative;
+}
+
+.leftcontent {
+  padding: 50px;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.introname {
+  font-size: 30px;
+}
+
+.name {
+  font-size: 60px;
+}
+
+.jobtitle {
+  height: 50px;
+  overflow: hidden;
+}
+
+.titlecontent {
+  height: 100%;
+  animation: move 10s ease-in-out infinite alternate;
+  /* maybe learn more abt css animation if needed */
+}
+
+.eachtitle {
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(91, 131, 218);
+  display: flex;
+  align-items: center;
+}
+
+.introImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: -100px;
+}
+
+.rightBackground {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  background-color: rgb(91, 131, 218);
+  width: 100%;
+  height: 70%;
+  position: absolute;
+  right: 0px;
+  z-index: -1;
+}
+
+/* flex one basically splits them, left goes to half and right to the other */
+
+i {
+  margin-top: 500px;
+  position: absolute;
+  animation: bounceArrow 1s infinite;
+}
+
+@keyframes bounceArrow {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+
+.imgWrap {
+  margin-top: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .name {
+    font-size: 40px;
+    color: blue;
+  }
+}
